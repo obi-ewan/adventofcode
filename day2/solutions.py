@@ -23,7 +23,6 @@ for line in data:
 print(contains_2 * contains_3)
 
 # part 2
-correct_count = {}
 same_string = ''
 
 for string in data:
