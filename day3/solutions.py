@@ -7,7 +7,6 @@ for line in data:
     short_line = line.replace('@ ', '')
     id, position, dimensions = short_line.split(' ')
     useable_data[id.strip('#')] = [position.strip(':'), dimensions.strip('\n')]
-    b = 2
 
 grid_width = 0
 grid_height = 0
