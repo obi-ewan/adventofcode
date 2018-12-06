@@ -5,7 +5,7 @@ data = file.readlines()[0].strip()
 # pt1
 new_data = []
 
-for i, c in enumerate(data):
+for c in data:
     new_data.pop() if new_data and c == new_data[-1].swapcase() else new_data.append(c)
 
 print(len(new_data))
@@ -19,7 +19,7 @@ for char in alphabet:
     new_data = []
     cdata = data.replace(char.lower(), '').replace(char.upper(), '')
 
-    for i, c in enumerate(cdata):
+    for c in data:
         new_data.pop() if new_data and c == new_data[-1].swapcase() else new_data.append(c)
 
     polymers[char] = len(new_data)
